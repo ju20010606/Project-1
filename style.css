@@ -1,0 +1,27 @@
+/* need to resize the image */
+
+header{
+    background-color: whitesmoke;
+    height: 200px;
+}
+body{
+    background-color: lightblue;
+}
+.board{
+    background-color: whitesmoke;
+    height: 500px;
+    width: 700px;
+    margin-top: 45px ;
+    margin-bottom: 45px;
+    margin-left: 100px;
+    display: inline-block;
+}
+.menu{
+    background-color: whitesmoke;
+    height: 500px;
+    width: 500px;
+    margin-top: 0 px ;
+    margin-bottom: 45px;
+    display: inline-block;
+    margin-left: 50px;
+}
