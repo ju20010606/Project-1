@@ -14,7 +14,10 @@ let img12 = "https://upload.wikimedia.org/wikipedia/en/b/bf/Mayfeld_Star_Wars.jp
 let img13 = "https://vignette.wikia.nocookie.net/starwars/images/5/5e/RanzarMalk.png/revision/latest?cb=20191214012204";
 let img14 = "https://static.tvmaze.com/uploads/images/medium_portrait/230/575384.jpg";
 let imgs = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14]
-// randomize between images 
+// randomize between images
+let randomIndex = Math.floor(Math.random()*imgs.length) 
+let randomImg = imgs[randomIndex]
+console.log(randomImg)
 //give random image to 2 divs if clicked
 //if two divs clicked have the same image than keep them turned to the images side 
 //if two divs don't have the same image turn them back
