@@ -56,14 +56,21 @@ randomImgs = () => {
       let j = i++;
       squares[i].addEventListener("click",()=>{
         squares[i].innerHTML = `<img src=${randImg} /img>`;
+        if(squares[i].innerHTML === squares[j].innerHTML){
+            console.log("it works")
+        }
       })
       
       squares[j].addEventListener("click",()=>{
         squares[j].innerHTML = `<img src=${randImg} /img>`;
+        if(squares[i].innerHTML === squares[j].innerHTML){
+            console.log("it works")
+        }
       })
       
     }
   };
+
 restart = () => {
   document.querySelector(".newGame").addEventListener("click", () => {
     playingImgs = imgs.slice();
