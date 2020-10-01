@@ -1,6 +1,7 @@
 
 body{
     text-align: center;
+    /* background-image: url("https://i.gifer.com/5WWU.gif") */
 }
 
 
@@ -17,13 +18,13 @@ h2{
 }
 .square{
     display: inline-block;
-    background-color: gray;
     height: 75px;
     width: 75px;
     margin-right: 5px;
     margin-left: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: white;
 }
 
 header{
@@ -55,7 +56,7 @@ body{
 .newGame, .timed, .configurations{
     display: block;
     border: none;
-    background-color: white;
+    background-color: transparent;
     width: 200px;
     padding: 20px;
     margin-left: 50px;
@@ -63,11 +64,15 @@ body{
 }
 
 .square:hover {
-   background-color: white;
+   background-color: gray;
 }
 
 
-
+img{
+    width: 60px;
+    height: 60px;
+    margin-top: 7px;
+}
 
 /* conditions for screen size  */
 @media screen and (min-width: 800px) and (max-width:1060px){
@@ -98,6 +103,8 @@ body{
        display: inline;
        padding: 0px;
        width: 100px;
+       margin-left: 10px;
+
     }
 
     .board{
@@ -112,5 +119,10 @@ body{
     height: 60px;
     width: 60px;
     margin-bottom: 10px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
     }
 }
