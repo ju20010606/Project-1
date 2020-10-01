@@ -46,27 +46,36 @@ let imgs = [
 let playingImgs = imgs.slice();
 
 let squares = document.querySelectorAll(".square");
-
 randomImgs = () => {
-  for (let i = 0; i < 28; i++) {
-    let randIndex = Math.floor(Math.random() * playingImgs.length);
-    let randImg = playingImgs[randIndex];
-    playingImgs.splice(randIndex, 1);
-    // let randIndex1 = Math.floor(Math.random() * 28);
-    // let randIndex2 = Math.floor(Math.random() * 28);
-    let j = i++;
-    squares[i].innerHTML = `<img src=${randImg} /img>`;
-    squares[j].innerHTML = `<img src=${randImg} /img>`;
-  }
-};
+    for (let i = 0; i < 28; i++) {
+      let randIndex = Math.floor(Math.random() * playingImgs.length);
+      let randImg = playingImgs[randIndex];
+      playingImgs.splice(randIndex, 1);
+      // let randIndex1 = Math.floor(Math.random() * 28);
+      // let randIndex2 = Math.floor(Math.random() * 28);
+      let j = i++;
+      squares[i].addEventListener("click",()=>{
+        squares[i].innerHTML = `<img src=${randImg} /img>`;
+      })
+      
+      squares[j].addEventListener("click",()=>{
+        squares[j].innerHTML = `<img src=${randImg} /img>`;
+      })
+      
+    }
+  };
 restart = () => {
   document.querySelector(".newGame").addEventListener("click", () => {
     playingImgs = imgs.slice();
-    console.log(imgs)
-    console.log(playingImgs)
     randomImgs();
   });
 };
+
+win = () =>{
+    
+}
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   randomImgs();
