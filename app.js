@@ -47,32 +47,33 @@ let imgs = [
 ];
 
 let playingImgs = imgs.slice();
-
+let randomArray = [1,19,13,2,5,16,7,0,20,26,3,6,22,15,27,11,14,23,21,17,4,25,12,24,9,18,10,8]
 let squares = document.querySelectorAll(".square");
+
 randomImgs = () => {
-    for (let i = 0; i < 28; i++) {
+    for (let i = 0; i <randomArray.length ; i++) {
       let randIndex = Math.floor(Math.random() * playingImgs.length);
       let randImg = playingImgs[randIndex];
       playingImgs.splice(randIndex, 1);
-      // let randIndex1 = Math.floor(Math.random() * 28);
-      // let randIndex2 = Math.floor(Math.random() * 28);
-      let j = i++;
-      squares[i].addEventListener("click",()=>{
-        squares[i].innerHTML = `<img src=${randImg} /img>`;
-        if(squares[i].innerHTML === squares[j].innerHTML){
-            setTimeout(()=>{
-                squares[i].innerHTML = `<img src=${imgOfRose} /img>`
-                squares[j].innerHTML = `<img src=${imgOfRose} /img>`
-            },500)
-        } 
-      })
+      let j = i++
+      console.log(randomArray[j],randomArray[i])
+      console.log(squares[randomArray[j]],squares[randomArray[i]])
+    //   squares[randomArray[i]].addEventListener("click",()=>{
+        squares[randomArray[i]].innerHTML = `<img src=${randImg} /img>`;
+        // if(squares[randomArray[i]].innerHTML !== squares[randomArray[j]].innerHTML){
+        //     setTimeout(()=>{
+        //         squares[randomArray[i]].innerHTML = `<img src=${imgOfRose} /img>`
+        //         squares[randomArray[j]].innerHTML = `<img src=${imgOfRose} /img>`
+        //     },500)
+        // } 
+    //   })
       
-      squares[j].addEventListener("click",()=>{
-        squares[j].innerHTML = `<img src=${randImg} /img>`;
-      })
+    //   squares[randomArray[j]].addEventListener("click",()=>{
+        squares[randomArray[j]].innerHTML = `<img src=${randImg} /img>`;
+    //   })
       
     }
-  };
+  }
 
 
 
@@ -84,11 +85,8 @@ restart = () => {
 };
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
-  randomImgs();
-  restart();
+    randomImgs()
 });
 
 
