@@ -1,9 +1,9 @@
+// global variables 
 let imgOfRose =
   "https://img.elo7.com.br/product/original/1DCCA20/lirio-permanente-buque-c-5-lirios-flor-artificial-azul-azul.jpg";
 let numberOfClicks = 0;
 let matched = false;
 let win = 0;
-//array of images
 let img1 =
   "https://www.thespruce.com/thmb/8_i_RDBPCc5ml3W0RJUTcbpBazQ=/2044x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hibiscus-586eb5513df78c17b6760bbd.jpg";
 let img2 =
@@ -46,8 +46,9 @@ let imgs = [
   img13,
   img14,
 ];
-
+//creates another array that is equal to the imgs array called playingImgs
 let playingImgs = imgs.slice();
+//array of index numbers for selecting random divs
 let randomArray = [
   1,
   19,
@@ -78,11 +79,16 @@ let randomArray = [
   10,
   8,
 ];
+//getting all the divs and placing in a variable called square
 let square = document.querySelectorAll(".square");
+//turning square into an array instead of a NodeList and adding it to a variable called squares
 let squares = [...square];
+//creating a new array that is equal to squares and storing into playingSquares
 let playingSquares = squares.slice();
 randomImgs = () => {
+  //loop through the randomArray
   for (let i = 0; i < randomArray.length; i++) {
+    
     let randIndex = Math.floor(Math.random() * playingImgs.length);
     let randImg = playingImgs[randIndex];
     playingImgs.splice(randIndex, 1);
