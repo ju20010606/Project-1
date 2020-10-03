@@ -1,4 +1,4 @@
-# Mandalorian Memory Game
+# Tropical Flowers Memory Game
 
 A simple memory game about tropical flowers!
 
