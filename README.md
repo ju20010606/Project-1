@@ -17,7 +17,7 @@ Is a simple memory game about tropical flowers!
 
 ##### Credits:
 
-[Images](https://www.thespruce.com/tropical-flowers-you-can-grow-anywhere-4122087 "Tropical Flowers Images")
+All Tropical Flowers Images Used: (https://www.thespruce.com/tropical-flowers-you-can-grow-anywhere-4122087 
 
 ## Approach:
 
