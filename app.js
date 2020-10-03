@@ -4,30 +4,31 @@ let numberOfClicks = 0;
 let matched = false;
 //array of images
 let img1 =
-  "https://i.insider.com/5dcae88e79d75759bc2e4e15?width=750&format=jpeg&auto=webp";
+  "https://www.thespruce.com/thmb/8_i_RDBPCc5ml3W0RJUTcbpBazQ=/2044x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hibiscus-586eb5513df78c17b6760bbd.jpg";
 let img2 =
-  "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg/220px-The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg";
-let img3 = "https://upload.wikimedia.org/wikipedia/en/e/eb/IG-11_Star_Wars.jpg";
+  "https://www.thespruce.com/thmb/unLiNwpESH_09GThbbUXeRXZs2A=/1878x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bromeliad-586fdf533df78c17b6f5d364.jpg";
+let img3 = "https://www.thespruce.com/thmb/tEfHoiSPk27bqQYnEZMkieqybYg=/2048x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/clivia-58711f155f9b584db3d44b8e.jpg";
 let img4 =
-  "https://i.pinimg.com/originals/5d/34/52/5d34520bb701296787fc8df6188714a7.png";
+  "https://www.thespruce.com/thmb/QBRY605wi3wnSLR01bEej2L7mbM=/2121x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ChenillePlant-GettyImages-1025411834-4215f67bd6db48cd9e53f9b184adc27f.jpg";
 let img5 =
-  "https://vignette.wikia.nocookie.net/starwars/images/0/0c/The_Armorer.png/revision/latest?cb=20200321220255";
+  "https://www.thespruce.com/thmb/9Q2ixsTbzYsYpdWgaqedE1Ls4XY=/2127x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Orchids-GettyImages-952048542-de44c19be534406e92448caf7b7a6567.jpg";
 let img6 =
-  "https://vignette.wikia.nocookie.net/starwars/images/b/b0/MoffGideon-TMS01E07.jpg/revision/latest?cb=20191227221641";
+  "https://www.thespruce.com/thmb/k52E5E9kPiVBxd7Y71M5slixXP4=/1501x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/jasmineplant-5872a9ed5f9b584db3c99bbb.jpg";
 let img7 =
-  "https://geeksinaction.com.br/wp-content/uploads/2020/09/star-wars-mandalorian-greef-karga-carl-weathers-1235789-1280x0-1-752x440.jpeg";
-let img8 = "https://upload.wikimedia.org/wikipedia/en/3/3c/Kuiil_Star_Wars.jpg";
+  "https://www.thespruce.com/thmb/UMjya7CAK4P3Wv5i3Gy98TNUye0=/1618x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ginger-578c30055f9b584d2042a359.jpg";
+let img8 = "https://www.thespruce.com/thmb/BZzkNAfUsxCQyTIPpk2PtTqDovY=/1385x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/protea-5872f2f83df78c17b6e67b04.jpg";
 let img9 =
-  "https://i.pinimg.com/originals/55/f7/b2/55f7b283ba09c42ab47a181e30a5f385.png";
-let img10 = "https://upload.wikimedia.org/wikipedia/en/d/dc/The_Client.jpg";
+  "https://www.thespruce.com/thmb/NFucu23bdyARGTAXUbIKp3PhXXQ=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bougainvilleavine-5872f7425f9b584db32bfb54.jpg";
+let img10 =
+ "https://www.thespruce.com/thmb/dvk8wIyYIFQNd69Mp6BD-p_xOYo=/2121x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/anthurium-5873afc53df78c17b6bf7ec5.jpg";
 let img11 =
-  "https://vignette.wikia.nocookie.net/starwars/images/8/85/Paz_Vizla.png/revision/latest?cb=20191123193811";
+  "https://www.thespruce.com/thmb/sAiVb9Wp1nttAx64FoJ84BY5esQ=/2116x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Medinilla-GettyImages-496543228-4d2b58e5acaa40b5b6f87543e6047f29.jpg";
 let img12 =
-  "https://upload.wikimedia.org/wikipedia/en/b/bf/Mayfeld_Star_Wars.jpg";
+  "https://www.thespruce.com/thmb/yNj3z-6h8ACnPp5HIwxx2Mniy94=/1686x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Pentaflowrs-GettyImages-154359473-f2dd80432110463590a3dbfd43c62f5b.jpg";
 let img13 =
-  "https://vignette.wikia.nocookie.net/starwars/images/5/5e/RanzarMalk.png/revision/latest?cb=20191214012204";
+  "https://www.thespruce.com/thmb/V37HQnjVoxEf4qufbPllgSoX6hg=/1650x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Cannalily-GettyImages-960214120-ae600ae8e85c4b6987631b428a52a2e7.jpg";
 let img14 =
-  "https://static.tvmaze.com/uploads/images/medium_portrait/230/575384.jpg";
+  "https://www.thespruce.com/thmb/R9Rjq--YFa4GUTCmuKisah2-Pdg=/2119x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AngelsTrumpet-GettyImages-613334802-8e6f97d9c45a4b2a89cb43c4ea9ce4e4.jpg";
 let imgs = [
   img1,
   img2,
@@ -109,22 +110,6 @@ randomImgs = () => {
             square2.classList.remove("clicked2")
           }
 
-        // console.log(playingSquares)
-        // let randDiv2 = event.currentTarget
-        // let indexOfRandDiv2 = playingSquares.indexOf(randDiv2)
-        // console.log(randDiv2)
-        // playingSquares.splice(indexOfRandDiv2, 1);
-        // console.log(playingSquares);
-        // numberOfClicks = 0;
-        // console.log("1");
-        // let element2 = event.currentTarget.innerHTML;
-        // for (let r = 0; r < playingSquares.length; r++) {
-        //   if (playingSquares[r].innerHTML === element2) {
-        //     console.log("working");
-        //     playingSquares.splice(indexOfRandDiv2, 0, randDiv2);
-        //     break
-        //   }
-        // }
       }
     });
 
@@ -150,63 +135,17 @@ randomImgs = () => {
             square1.classList.remove("clicked1")
             square2.classList.remove("clicked2")
           }
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          //   console.log(playingSquares)
-        //   let randDiv = event.currentTarget
-        //   let indexOfRandDiv = playingSquares.indexOf(randDiv)
-        //   console.log(randDiv)
-        //  playingSquares.splice(indexOfRandDiv, 1);
-        //   console.log(playingSquares);
-        //  numberOfClicks = 0;
-        //  console.log(2);
-        //  let element = event.currentTarget.innerHTML;
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        // for (let u = 0; u < playingSquares.length; u++) { 
-        //   if (playingSquares[u].innerHTML === element) {
-        //     console.log("it works");
-        //     console.log("Playing Squares:",playingSquares[u].innerHTML)
-        //     console.log("element:",element)
-        //     matched = true
-        //   } else if (playingSquares[u] !== element){
-        //     playingSquares.splice(indexOfRandDiv, 0, randDiv);
-            
-        //   }
-        // }
       }
     });
   }
 };
-
 restart = () => {
   document.querySelector(".newGame").addEventListener("click", () => {
     playingImgs = imgs.slice();
     randomImgs();
     for (square of squares) {
       square.innerHTML = `<img src=${imgOfRose} /img>`;
+    
     }
   });
 };
