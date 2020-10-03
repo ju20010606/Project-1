@@ -88,7 +88,7 @@ let playingSquares = squares.slice();
 randomImgs = () => {
   //loop through the randomArray
   for (let i = 0; i < randomArray.length; i++) {
-    
+
     let randIndex = Math.floor(Math.random() * playingImgs.length);
     let randImg = playingImgs[randIndex];
     playingImgs.splice(randIndex, 1);
@@ -169,7 +169,7 @@ restart = () => {
 winning = () =>{
   if(win === 14){
     document.querySelector(".board").style.display = "none"
-    document.querySelector(".winning").style.display = "inline-block"
+    document.querySelector(".winning").style.display = "block"
   }
 }
 
