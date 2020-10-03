@@ -47,7 +47,7 @@ body{
 }
 .menu{
     border: 3px solid lightblue;
-    height: 250px;
+    height: 160px;
     width: 300px;
     display: inline-block;
     margin: 0 auto;
