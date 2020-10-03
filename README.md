@@ -1,19 +1,76 @@
-# Tropical Flowers Memory Game
 
-A simple memory game about tropical flowers!
+# Tropical Flowers Memory Game: 
 
-### Installing
+### App Demo: https://ju20010606.github.io/Project-1/
 
-All you need is to fork the git repository and clone it to your device!
+---
+
+## Concept:
+
+Is a simple memory game about tropical flowers! 
+
+## Technologies Used:
+
+* HTML
+* CSS
+* JavaScript 
+
+##### Credits:
+
+[Images](https://www.thespruce.com/tropical-flowers-you-can-grow-anywhere-4122087 "Tropical Flowers Images")
+
+## Approach:
+
+#### Overview
+
+1.
+2.
 
 
-### Built With
+#### Wireframe
 
-* [Visual Studio Code](https://code.visualstudio.com/)
+<img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1601671860/DesignOne_uevwek.png" width="80%" >
 
+Color Pallet:
 
-### Acknowledgments
+```
+    #5d5174
+    #9680a4
+    #e2deea
+    #545454
+    #e4e0dd
+    #ffffff
+```
 
-* all images used from: https://www.thespruce.com/tropical-flowers-you-can-grow-anywhere-4122087
+#### User stories
+
+As an user I expect to see a button bla bla bla bla
+
+#### Development Plan 
+
+description of your development plan 
+
+* Development Plan  ONE
+* Development Plan  Two
+* Development Plan  Three 
+* Development Plan  Four
+
+#### MVP
+
+* MVP ONE
+* MVP Two
+* MVP Three 
+* MVP Four
+
+#### Stretch goals
+
+* Stretch goals ONE
+* Stretch goals Two
+* Stretch goals Three 
+* Stretch goals Four
+
+## Challenges:
+
+Small description of a challange you faced. 
 
 
