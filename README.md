@@ -22,7 +22,7 @@ Is a simple memory game about tropical flowers!
 
 [Blue Flower](https://img.elo7.com.br/product/original/1DCCA20/lirio-permanente-buque-c-5-lirios-flor-artificial-azul-azul.jpg )
 
-## Approach:
+<!-- ## Approach:
 
 #### Overview
 
@@ -76,4 +76,4 @@ description of your development plan
 
 Small description of a challange you faced. 
 
-
+ -->
