@@ -26,8 +26,11 @@ Is a simple memory game about tropical flowers!
 
 #### Overview
 
-1.
-2.
+1. Wireframed App
+2. Use HTML to place elements in desired position according to wireframe
+3. Used css to style elements 
+4. Place media conditions for better user interactions
+5. 
 
 
 #### Wireframe

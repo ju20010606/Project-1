@@ -2,6 +2,7 @@ let imgOfRose =
   "https://img.elo7.com.br/product/original/1DCCA20/lirio-permanente-buque-c-5-lirios-flor-artificial-azul-azul.jpg";
 let numberOfClicks = 0;
 let matched = false;
+let win = 0
 //array of images
 let img1 =
   "https://www.thespruce.com/thmb/8_i_RDBPCc5ml3W0RJUTcbpBazQ=/2044x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hibiscus-586eb5513df78c17b6760bbd.jpg";
@@ -99,6 +100,8 @@ randomImgs = () => {
           let square1 = document.querySelector(".clicked1")
           let square2 = document.querySelector(".clicked2")
           if(square1.innerHTML === square2.innerHTML){
+            win ++
+            console.log(win)
              square1.classList.remove("clicked1")
              square2.classList.remove("clicked2")
           } else if (square1.innerHTML !== square2.innerHTML){
@@ -125,6 +128,8 @@ randomImgs = () => {
           let square1 = document.querySelector(".clicked1")
           let square2 = document.querySelector(".clicked2")
           if(square1.innerHTML === square2.innerHTML){
+            win++
+            console.log(win)
              square1.classList.remove("clicked1")
              square2.classList.remove("clicked2")
           } else if (square1.innerHTML !== square2.innerHTML){
@@ -150,9 +155,16 @@ restart = () => {
   });
 };
 
+winning = () =>{
+  if(win === 14){
+    alert("win")
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   randomImgs();
   restart();
+  winning();
 });
 
 // ------- future -------------
